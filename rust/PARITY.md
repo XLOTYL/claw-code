@@ -4,7 +4,7 @@ Last updated: 2026-04-03
 
 ## Mock parity harness — milestone 1
 
-- [x] Deterministic Anthropic-compatible mock service (`rust/crates/mock-anthropic-service`)
+- [x] Deterministic Anthropic-compatible mock service (`mocks/mock-anthropic-service`)
 - [x] Reproducible clean-environment CLI harness (`rust/crates/rusty-claude-cli/tests/mock_parity_harness.rs`)
 - [x] Scripted scenarios: `streaming_text`, `read_file_roundtrip`, `grep_chunk_assembly`, `write_file_allowed`, `write_file_denied`
 
@@ -18,7 +18,7 @@ Last updated: 2026-04-03
 
 ## Harness v2 behavioral checklist
 
-Canonical scenario map: `rust/mock_parity_scenarios.json`
+Canonical scenario map: `mocks/parity/mock_parity_scenarios.json`
 
 - Multi-tool assistant turns
 - Bash flow roundtrips

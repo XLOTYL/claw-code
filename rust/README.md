@@ -69,11 +69,11 @@ Harness coverage:
 
 Primary artifacts:
 
-- `crates/mock-anthropic-service/` — reusable mock Anthropic-compatible service
+- `../mocks/mock-anthropic-service/` — reusable mock Anthropic-compatible service
 - `crates/rusty-claude-cli/tests/mock_parity_harness.rs` — clean-env CLI harness
 - `scripts/run_mock_parity_harness.sh` — reproducible wrapper
 - `scripts/run_mock_parity_diff.py` — scenario checklist + PARITY mapping runner
-- `mock_parity_scenarios.json` — scenario-to-PARITY manifest
+- `../mocks/parity/mock_parity_scenarios.json` — scenario-to-PARITY manifest
 
 ## Features
 
@@ -182,7 +182,7 @@ rust/
     ├── api/                # Provider clients + streaming + request preflight
     ├── commands/           # Shared slash-command registry + help rendering
     ├── compat-harness/     # TS manifest extraction harness
-    ├── mock-anthropic-service/ # Deterministic local Anthropic-compatible mock
+    ├── ../mocks/mock-anthropic-service/ # Deterministic local Anthropic-compatible mock
     ├── plugins/            # Plugin metadata, manager, install/enable/disable surfaces
     ├── runtime/            # Session, config, permissions, MCP, prompts, auth/runtime loop
     ├── rusty-claude-cli/   # Main CLI binary (`claw`)

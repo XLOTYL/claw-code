@@ -4,7 +4,7 @@ This milestone adds a deterministic Anthropic-compatible mock service plus a rep
 
 ## Artifacts
 
-- `crates/mock-anthropic-service/` — mock `/v1/messages` service
+- `../mocks/mock-anthropic-service/` — mock `/v1/messages` service
 - `crates/rusty-claude-cli/tests/mock_parity_harness.rs` — end-to-end clean-environment harness
 - `scripts/run_mock_parity_harness.sh` — convenience wrapper
 
@@ -37,7 +37,7 @@ cd rust/
 python3 scripts/run_mock_parity_diff.py
 ```
 
-Scenario-to-PARITY mappings live in `mock_parity_scenarios.json`.
+Scenario-to-PARITY mappings live in `mocks/parity/mock_parity_scenarios.json`.
 
 ## Manual mock server
 
