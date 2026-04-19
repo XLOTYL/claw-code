@@ -54,7 +54,14 @@ def main() -> int:
     script_path = Path(__file__).resolve()
     rust_root = script_path.parent.parent
     repo_root = rust_root.parent
-    manifest = load_manifest(repo_root / "mocks/parity/mock_parity_scenarios.json")
+    manifest_path = repo_root / "mocks/parity/mock_parity_scenarios.json"
+    if not manifest_path.is_file():
+        print(
+            "mock parity scenarios not present (deployed branch omits mocks/); skipping.",
+            file=sys.stderr,
+        )
+        return 0
+    manifest = load_manifest(manifest_path)
     parity_text = load_parity_text(repo_root / "PARITY.md")
 
     missing_refs = ensure_refs_exist(manifest, parity_text)

@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/*", "../mocks/mock-anthropic-service"]
+members = ["crates/*"]
 resolver = "2"
 
 [workspace.package]
